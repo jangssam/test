@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>🧠 메모리 매칭 게임</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Jua&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="game-container">
+    <header class="game-header">
+      <h1>🧠 메모리 매칭</h1>
+      <div class="stats">
+        <span class="stat" id="moves">이동: 0</span>
+        <span class="stat" id="timer">00:00</span>
+      </div>
+      <button class="btn-restart" id="restart">다시 시작</button>
+    </header>
+
+    <main class="game-board" id="board">
+      <!-- 카드들이 JavaScript로 생성됩니다 -->
+    </main>
+
+    <div class="message-overlay" id="messageOverlay">
+      <div class="message-box">
+        <h2 id="messageTitle">축하합니다! 🎉</h2>
+        <p id="messageText">모든 카드를 맞췄어요!</p>
+        <p class="message-stats" id="messageStats"></p>
+        <button class="btn-restart" id="restartFromWin">한 번 더 하기</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="game.js"></script>
+</body>
+</html>
